@@ -14,4 +14,9 @@ import javax.ejb.Local;
 @Local
 public interface ArticleBeanLocal {
     
+    /**
+     *
+     * @return a random message
+     */
+    public String messageRandom();
 }

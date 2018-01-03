@@ -12,12 +12,16 @@ import javax.ejb.Stateless;
  * @author Grondor
  */
 @Stateless
-public class ArticleBean implements ArticleBeanLocal {
-    public ArticleBean(){
+public class NewSessionBean implements NewSessionBeanRemote {
+
+    // Add business logic below. (Right-click in editor and choose
+    // "Insert Code > Add Business Method")
+    
+    public NewSessionBean(){
         
     }
 
-    public String messageRandom() {
+    public String messageRandom2() {
         return "Hello my name is wtf!";
     }
 }

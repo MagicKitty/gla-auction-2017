@@ -4,14 +4,19 @@
     Author     : Grondor
 --%>
 
+<%@page import="Articles.ArticleBean"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <link rel="shortcut icon" href="">
     </head>
     <body>
+        <% ArticleBean ab = new ArticleBean(); %>
+        <p><% out.println(ab.messageRandom()); %></p>
         <p>Spinner</p>
         <p>Des hand-spinners de ouf en 5 couleurs!</p>
         <p>Quantité : 5</p>
